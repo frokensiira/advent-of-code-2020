@@ -2,22 +2,10 @@ const expenseReport = [1150, 1579, 1361,1319,1201,1253,1806,1783,1164,1772,1920,
 
 const SUM = 2020;
 
-const twoSum = (nums, target) => {
-	for (let i = 0; i < nums.length; i ++) {
-		let currentDifference = target - nums[i];
-		const found = nums.find(num => num === currentDifference);
-
-		if(found) {
-			const foundNumbers = [];
-			foundNumbers.push(nums[i], found);
-			return foundNumbers;
-		}
-	}
+const multiplyNumbers = (numbers) => {
+	return numbers.reduce((total, amount) => total * amount);
 }
 
-const numbers = twoSum(expenseReport, SUM);
 
-let product = null;
-if(numbers) {
-	product = numbers.reduce((total, amount) => total * amount);
-}
+
+
