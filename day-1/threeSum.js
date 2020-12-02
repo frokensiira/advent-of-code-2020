@@ -14,7 +14,7 @@ const threeSum = (nums, target) => {
 
 const threeNumbers = threeSum(expenseReport, SUM);
 
-let threeNumberProduct = null;
 if(threeNumbers){
+    let threeNumberProduct = null;
     threeNumberProduct = multiplyNumbers(threeNumbers);
 }

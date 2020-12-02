@@ -13,7 +13,9 @@ const twoSum = (nums, target) => {
 
 const twoNumbers = twoSum(expenseReport, SUM);
 
-let twoNumberProduct = null;
 if(twoNumbers) {
+    let twoNumberProduct = null;
 	twoNumberProduct = multiplyNumbers(twoNumbers);
+	console.log('twoNumberProduct', twoNumberProduct);
 }
+
