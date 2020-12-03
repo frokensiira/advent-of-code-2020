@@ -13,6 +13,6 @@ const newCheckPasswords = (firstPosition, secondPosition, letter, password) => {
     }
 }
 
-organizeData(passwords);
+organizeData(passwords, newCheckPasswords);
 
 console.log('newValidPasswords', newValidPasswords);

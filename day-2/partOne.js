@@ -21,24 +21,8 @@ const checkPasswords = (min, max, letter, password) => {
 
 }
 
-//organizeData(passwords);
+organizeData(passwords, checkPasswords);
 
-/* passwords.forEach(pw => {
-
-    const hyphenIndex = pw.indexOf('-');
-    const firstSpaceIndex = pw.indexOf(" ");
-    const colonIndex = pw.indexOf(":");
-    const lastSpaceIndex = pw.lastIndexOf(" ");
-
-    const min = pw.slice(0, hyphenIndex);
-    const max = pw.slice(hyphenIndex + 1, firstSpaceIndex);
-    const letter = pw.slice(firstSpaceIndex + 1, colonIndex);
-    const password = pw.slice(lastSpaceIndex + 1);
-
-    checkPasswords(min, max, letter, password);
-
-}); */
-
-//console.log(validPasswords);
+console.log('validPasswords', validPasswords);
 
 
