@@ -15,11 +15,15 @@ const checkPasswords = (min, max, letter, password) => {
             validPasswords++;
         }
 
+    } else {
+        return;
     }
 
 }
 
-passwords.forEach(pw => {
+//organizeData(passwords);
+
+/* passwords.forEach(pw => {
 
     const hyphenIndex = pw.indexOf('-');
     const firstSpaceIndex = pw.indexOf(" ");
@@ -33,8 +37,8 @@ passwords.forEach(pw => {
 
     checkPasswords(min, max, letter, password);
 
-});
+}); */
 
-console.log(validPasswords);
+//console.log(validPasswords);
 
 
